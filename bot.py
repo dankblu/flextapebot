@@ -17,7 +17,7 @@ async def ping(ctx):
 
 @client.command(aliases=["momma"])
 async def x(ctx,*,jok):
-    responses= [" ",
+    responses= [
     " mamma is so fat she doesn't need the internet, because she's already world wide.",
     " momma's so fat she needs cheat codes for Wii Fit.",
     " mama so ugly when she went into a haunted house she came out with a job application.",
@@ -27,7 +27,14 @@ async def x(ctx,*,jok):
 
 @client.command(aliases=['lord'])
 async def q(ctx,*,question):
-    responses = ["A whole fricking lot","No. Die","Hol up lemme ask the kids in my basement","wow we have a comedian here","idk about that, but im pretty sure axe is gae", "ask me at 'who gives a fuck' o clock","wayyyy more than you can imagine","nahhh not so much","what the fuck kind of small brain do you have to ask this question ofc axe is gae","well I don't think so","high probability that axe is gae"]
+    responses = ["Damn you got the whole squad laughing",
+    "That's what she said",
+    "You are correct, but now you have an STD",
+    "wow we have a comedian here",
+    "nahh, i'd much rather watch torby talk than answer that",
+    "bru you dat dum? ofc axe is gae and madara mom fat",
+    "if I say yes, can i get butt seks?",
+    "Yes, but PLEASE tell axe to stop masturbating"]
     await ctx.send(f"Question: {question}\nAnswer : {random.choice(responses)}")
 
 @client.command()
