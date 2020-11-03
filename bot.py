@@ -13,7 +13,7 @@ async def on_ready():
 
 @client.command()
 async def ping(ctx):
-    await ctx.send('f{client.latency*1000}ms')
+    await ctx.send(f'{client.latency*1000}ms')
 @client.command(aliases=["momma"])
 async def x(ctx,*,jok):
     responses= [
