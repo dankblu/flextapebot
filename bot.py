@@ -13,8 +13,7 @@ async def on_ready():
 
 @client.command()
 async def ping(ctx):
-    await ctx.send('pong!')
-
+    await ctx.send('f{client.latency*1000}ms')
 @client.command(aliases=["momma"])
 async def x(ctx,*,jok):
     responses= [
@@ -32,7 +31,7 @@ async def q(ctx,*,question):
     "You are correct, but now you have an STD",
     "wow we have a comedian here",
     "nahh, i'd much rather watch torby talk than answer that",
-    "bru you dat dum? ofc axe is gae and madara mom fat",
+    "bru you dat dum?",
     "if I say yes, can i get butt seks?",
     "Yes, but PLEASE tell axe to stop masturbating"]
     await ctx.send(f"Question: {question}\nAnswer : {random.choice(responses)}")
