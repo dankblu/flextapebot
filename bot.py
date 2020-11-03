@@ -9,6 +9,8 @@ client = commands.Bot(command_prefix= 'poop ')
 async def on_ready():
     print("Bot is working")
 
+#my nigga my nigga
+
 @client.command()
 async def ping(ctx):
     await ctx.send('pong!')
