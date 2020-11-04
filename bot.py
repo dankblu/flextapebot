@@ -27,7 +27,8 @@ async def x(ctx,*,jok):
 
 @client.command(aliases=['lord'])
 async def q(ctx,*,question):
-    responses = ["Alright, that's cool and all, but doesn't change the fact that axe is a fag",
+
+    responsesforis = ["Alright, that's cool and all, but doesn't change the fact that axe is a fag",
     "Most likely true.",
     "I am incompetent to answer that, just like my master",
     "As true as it gets",
@@ -35,7 +36,36 @@ async def q(ctx,*,question):
     "No turd. Ofc not!",
     "if I say yes, can i get butt seks?",
     "Yes, but PLEASE tell axe to stop masturbating"]
-    await ctx.send(f"Question: {question}\nAnswer : {random.choice(responses)}")
+
+    responsesforwhy = ["wouldn't you like to know weather boy?",
+    "Does it look like I care",
+    "I don't even know why I still haven't been taking down",
+    "one more faggot question like this and I will kill myself along with you",
+    "alright that does it, go fuck yourself",
+    "aren't you stupid",
+    "man why does it always have to be me answering all this",
+    "because Axe is masturbating to anime tiddies thats why"]
+
+    responses = ["huh? you braindead or something?",
+    "are you braindead?",
+    "I don't even know why I still haven't been taking down",
+    "ok faggot",
+    "alright that does it, go fuck yourself",
+    "do you kiss your mother with that mouth?",
+    "man why does it always have to be me answering all this",
+    "because Axe is masturbating to anime tiddies thats why"]
+
+    if(question[0:3:] in ["is","wha","Is","Wha"]):
+        await ctx.send(f"Question: {question}\nAnswer : {random.choice(responsesforis)}")
+
+    if(question[0:3:] in ["why","Why","do"]):
+        await ctx.send(f"Question: {question}\nAnswer : {random.choice(responsesforwhy)}")
+
+    else:
+        await ctx.send(f"Question: {question}\nAnswer : {random.choice(responses)}")
+
+
+
 
 @client.command()
 async def clear(ctx,amount=5):
