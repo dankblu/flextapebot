@@ -58,7 +58,7 @@ async def q(ctx,*,question):
     if(question[0:2:] in ["is","wha","Is","Wha"]):
         await ctx.send(f"Question: {question}\nAnswer : {random.choice(responsesforis)}")
 
-    if(question[0:2:] in ["why","Why","do"]):
+    elif(question[0:2:] in ["why","Why","do"]):
         await ctx.send(f"Question: {question}\nAnswer : {random.choice(responsesforwhy)}")
 
     else:
