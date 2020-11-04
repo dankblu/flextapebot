@@ -15,6 +15,16 @@ async def on_ready():
 async def ping(ctx):
     await ctx.send(f'{round(client.latency*1000)}ms')
 
+@client.command()
+async def kill(ctx,*,person):
+    responses= [
+    " dies as madara's mum sat on them",
+    " dies of blood loss after having their pp bit off by piranhas",
+    " dies due to excessively masturbating to catgirls",
+    " died trying to kiss their mother with that mouth",
+    " gets stoned to death in saudi for being gay"]
+    await ctx.send(f"{person}{random.choice(responses)}")
+
 @client.command(aliases=["momma"])
 async def x(ctx,*,jok):
     responses= [
@@ -42,7 +52,7 @@ async def q(ctx,*,question):
     "I don't even know why I still haven't been taking down",
     "one more faggot question like this and I will kill myself along with you",
     "alright that does it, go fuck yourself",
-    "aren't you stupid",
+    "aren't you stupid, ofc",
     "man why does it always have to be me answering all this",
     "because Axe is masturbating to anime tiddies thats why"]
 
@@ -58,7 +68,7 @@ async def q(ctx,*,question):
     if(question[0:2:] in ["is","wha","Is","Wha"]):
         await ctx.send(f"Question: {question}\nAnswer : {random.choice(responsesforis)}")
 
-    elif(question[0:2:] in ["why","Why","do"]):
+    if(question[0:2:] in ["why","Why","do"]):
         await ctx.send(f"Question: {question}\nAnswer : {random.choice(responsesforwhy)}")
 
     else:
