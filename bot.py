@@ -55,10 +55,10 @@ async def q(ctx,*,question):
     "man why does it always have to be me answering all this",
     "because Axe is masturbating to anime tiddies thats why"]
 
-    if(question[0:3:] in ["is","wha","Is","Wha"]):
+    if(question[0:2:] in ["is","wha","Is","Wha"]):
         await ctx.send(f"Question: {question}\nAnswer : {random.choice(responsesforis)}")
 
-    if(question[0:3:] in ["why","Why","do"]):
+    if(question[0:2:] in ["why","Why","do"]):
         await ctx.send(f"Question: {question}\nAnswer : {random.choice(responsesforwhy)}")
 
     else:
