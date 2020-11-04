@@ -27,12 +27,12 @@ async def x(ctx,*,jok):
 
 @client.command(aliases=['lord'])
 async def q(ctx,*,question):
-    responses = ["Damn you got the whole squad laughing",
-    "That's what she said",
-    "You are correct, but now you have an STD",
-    "wow we have a comedian here",
-    "nahh, i'd much rather watch torby talk than answer that",
-    "bru you dat dum?",
+    responses = ["Alright, that's cool and all, but doesn't change the fact that axe is a fag",
+    "https://giphy.com/gifs/justin-stop-it-michael-jordon-get-some-help-l4Ki2obCyAQS5WhFe",
+    "https://giphy.com/gifs/moodman-modern-problems-require-solutions-9058ZMj6ooluP4UUPl",
+    "https://giphy.com/gifs/disney-fish-movie-Ri36aXH6NzQ76",
+    "https://giphy.com/gifs/cbc-funny-comedy-6Keo8QmE4VYLIxj5d3",
+    "https://giphy.com/gifs/earth-mindblown-kepler-Um3ljJl8jrnHy",
     "if I say yes, can i get butt seks?",
     "Yes, but PLEASE tell axe to stop masturbating"]
     await ctx.send(f"Question: {question}\nAnswer : {random.choice(responses)}")
