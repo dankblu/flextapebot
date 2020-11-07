@@ -38,14 +38,14 @@ async def x(ctx,*,jok):
 @client.command(aliases=['lord'])
 async def q(ctx,*,question):
 
-    responsesforis = ["Alright, that's cool and all, but doesn't change the fact that axe is a fag",
+    responsesforis = ["No, I don't think so",
     "Most likely true.",
     "I am incompetent to answer that, just like my master",
     "As true as it gets",
-    "alright that does it, go fuck yourself",
+    "I mean I am not sure, but okay.",
     "No turd. Ofc not!",
     "if I say yes, can i get butt seks?",
-    "Yes, but PLEASE tell axe to stop masturbating"]
+    "Yes, idk why tho"]
 
     responsesforwhy = ["wouldn't you like to know weather boy?",
     "Does it look like I care",
