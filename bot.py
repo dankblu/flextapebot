@@ -19,9 +19,9 @@ async def ping(ctx):
 async def kill(ctx,*,person):
     responses= [
     " dies as madara's mum sat on them",
-    " dies of blood loss after having their pp bit off by piranhas",
+    " died trying to kiss their dead grandma",
     " dies due to excessively masturbating to catgirls",
-    " died trying to kiss their mother with that mouth",
+    " died trying to give themselves a blowjob",
     " gets stoned to death in saudi for being gay"]
     await ctx.send(f"{person}{random.choice(responses)}")
 
