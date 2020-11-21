@@ -18,7 +18,7 @@ async def ping(ctx):
 @client.command()
 async def kill(ctx,*,person):
     responses= [
-    " dies as madara's mum sat on them",
+    " dies as their mum sat on them",
     " died trying to kiss their dead grandma",
     " dies due to excessively masturbating to catgirls",
     " died trying to give themselves a blowjob",
@@ -63,7 +63,7 @@ async def q(ctx,*,question):
     "alright that does it, go fuck yourself",
     "do you kiss your mother with that mouth?",
     "man why does it always have to be me answering all this",
-    "because Axe is masturbating to anime tiddies thats why"]
+    "because you are masturbating to anime tiddies thats why"]
 
     if(question[0:2:] in ["is","wha","Is","Wha"]):
         await ctx.send(f"Question: {question}\nAnswer : {random.choice(responsesforis)}")
