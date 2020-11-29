@@ -15,15 +15,7 @@ async def on_ready():
 async def ping(ctx):
     await ctx.send(f'{round(client.latency*1000)}ms')
 
-@client.command()
-async def kill(ctx,*,person):
-    responses= [
-    " dies as their mum sat on them",
-    " died trying to kiss their dead grandma",
-    " dies due to excessively masturbating to catgirls",
-    " died trying to give themselves a blowjob",
-    " gets stoned to death in saudi for being gay"]
-    await ctx.send(f"{person}{random.choice(responses)}")
+
 
 @client.command(aliases=["momma"])
 async def x(ctx,*,jok):
@@ -50,20 +42,15 @@ async def q(ctx,*,question):
     responsesforwhy = ["wouldn't you like to know weather boy?",
     "Does it look like I care",
     "I don't even know why I still haven't been taking down",
-    "one more faggot question like this and I will kill myself along with you",
-    "alright that does it, go fuck yourself",
+    "alright that does it",
     "aren't you stupid, ofc",
-    "man why does it always have to be me answering all this",
-    "because Axe is masturbating to anime tiddies thats why"]
+    "man why does it always have to be me answering all this"]
 
-    responses = ["huh? you braindead or something?",
+    responses = ["huh??",
     "are you braindead?",
     "I don't even know why I still haven't been taking down",
-    "ok faggot",
-    "alright that does it, go fuck yourself",
-    "do you kiss your mother with that mouth?",
     "man why does it always have to be me answering all this",
-    "because you are masturbating to anime tiddies thats why"]
+    "because you are nice"]
 
     if(question[0:2:] in ["is","wha","Is","Wha"]):
         await ctx.send(f"Question: {question}\nAnswer : {random.choice(responsesforis)}")
@@ -101,4 +88,4 @@ async def unban(ctx,*, member):
             await ctx.guild.unban(user)
 
 
-client.run('NzcxOTQxMDM4MzY1NDc0ODI3.X5zcHQ.cCs9j-z6kkRloMkySnU5EBs-2RU')
+client.run('TOKEN')
